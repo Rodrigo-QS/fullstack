@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web oficial de Mexclub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar"> 
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26spx" viewBox="0 -960 960 960" width="24px" fill="#0B090A"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">PRODUCTOS</a></li>
+            <li><a href="#">NOSOTROS</a></li>
+            <li><a href="#">INICIAR SESIÓN</a></li>
+        </ul>
+        <ul>
+            <li class="logo"><a href="#"><img src="MXCLUB.png" class = "index-logo" alt="logo"></a></li>
+            <li class='hideOnMobile'><a href="#">BLOG</a></li>
+            <li class='hideOnMobile'><a href="#">PRODUCTOS</a></li>
+            <li class='hideOnMobile'><a href="#">NOSOTROS</a></li>
+            <li class='hideOnMobile'><a href="#">INICIAR SESIÓN</a></li>
+            <li class='menuButton' onclick=showSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="24px" fill="#0B090A"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <div class="intro">
+        <img src="background.jpg" alt="intro" class="intro-img">
+    </div>
+    
+    <main>
+        <div class="shop-container">
+          <div class="shop-item">
+            <img src="10.jpg" alt="Item 1">
+            <h2>Item 1</h2>
+            <p class="highlight">1 de 100</p>
+            <p>MTY-NL-G-01-NEGRA</p>
+            <span class="price">$20.00</span>
+            <button class="buy-button">Comprar</button>
+          </div>
+    
+          <div class="shop-item">
+            <img src="11.jpg" alt="Item 2">
+            <h2>Item 2</h2>
+            <p class="highlight">1 de 100</p>
+            <p>MTY-NL-G-01-BLANCA</p>
+            <span class="price">$30.00</span>
+            <button class="buy-button">Comprar</button>
+          </div>
+    
+          <div class="shop-item">
+            <img src="12.jpg" alt="Item 3">
+            <h2>Item 3</h2>
+            <p class="highlight">EDICION LIMITADA</p>
+            <p>MTY-NL-G-01-AZUL</p>
+            <span class="price">$40.00</span>
+            <button class="buy-button">Comprar</button>
+          </div>
+        </div>
+      </main>
+
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+<h2 class="contacto-header">Contacto</h2>
+<section class="contacto">
+    <form>
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="email">Correo electrónico :</label>
+        <input type="email" id="email" name="email" required>
+        <label for="mensaje">Mensaje :</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <button type="submit" class="buy-button">Enviar</button>
+    </form>
+    </section>
+
+<footer class="footer">
+        <a href="https://www.instagram.com"><img src="https://imgs.search.brave.com/_B-FpDvjsFy1gn-APQ-FDaKOiWV3hCfa37qXlK6k-WA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy81/ODBiNTdmY2Q5OTk2/ZTI0YmM0M2M1MjEu/cG5n" class = "redes-sociales" alt="instagram"></a>
+        <a href="https://www.youtube.com"><img src="https://imgs.search.brave.com/51sueN5kAnrzEi0LIJVUTr_DPtc383FF6MHQijf6Iw8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvcHJl/dmlld3MvMDE4Lzkz/MC81NzIvbm9uXzJ4/L3lvdXR1YmUtbG9n/by15b3V0dWJlLWlj/b24tdHJhbnNwYXJl/bnQtZnJlZS1wbmcu/cG5n" class = "redes-sociales" alt="youtube"></a>
+        <a href="https://www.x.com"><img src="https://imgs.search.brave.com/SVU7mbXUEP_4iNDP03w-W3ofP5sV6cv1HVOu2Z-5ZE8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy82/NGJlNjBkNzIxMTJi/ZGZjYTY5YTAxZjAu/cG5n" class = "redes-sociales" alt="x"></a>
+        <p>&copy2025 MEX CLUB. Derechos reservados.</p>
+</footer>
+    
+</body>
+</html>
